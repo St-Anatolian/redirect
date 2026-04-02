@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(www\.)?pechnik\.minsk\.by$ [NC]
+RewriteRule ^(.*)$ https://pechnik-minsk.by/$1 [L,R=301]
